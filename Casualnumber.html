@@ -8,14 +8,13 @@
 </header>
 <div align="center"style="font-size:40px;font-family:Monotype Corsiva;color:white;width:96%;height:100%;margin:40px;background-color:green;border-color:brown;border-style:outset groove double">
 <h1 align="center"><a href="index.html"><img style="width:100px;margin-right:20px;border-style:outset"src="Homepage.gif"/></a>Estrattore di Numeri Casuali</h1>
-Minimo:<input align="left" type="text" size="10"id="min"/>
 Massimo:<input align="left" type="text" size="10"id="max"/>
 <input style="font-size:20px;color:red;background-color:yellow;border-radius:20px"align="center" type="button" onCLick="Equazione()" value="Estrai"/>
 </div>
 <script>
 function Equazione()
 {
-var min=document.getElementById("min").value;
+var min=0
 var max=document.getElementById("max").value;
 var number=Math.floor(Math.random() * (max - min +1));
 var messaggio="Il numero estratto è : " + number;
