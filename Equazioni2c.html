@@ -21,8 +21,8 @@ var ax2=document.getElementById("ax2").value;
 var bx=document.getElementById("bx").value;
 var c= document.getElementById("c").value;
 var delta=(bx*bx)-4*ax2*c;
-var risultato=(-bx-Math.sqrt(delta))/2;
-var risultato1=(-bx+Math.sqrt(delta))/2;
+var risultato=(-bx-Math.sqrt(delta))/2*ax2;
+var risultato1=(-bx+Math.sqrt(delta))/2*ax2;
 var messaggio= "I Risultati sono X1: " + risultato + " e " + "X2: " + risultato1;
 alert(messaggio);
 }
